@@ -9,7 +9,7 @@ const promises = [createPromise(1), createPromise(2), createPromise(3)];
 const output = document.getElementById("output");
 
 Promise.all(promises).then(results => {
-    output.innerHTML = ""; // Remove loading row
+    output.innerHTML = ""; 
     results.forEach(result => {
         const row = document.createElement("tr");
         row.innerHTML = `<td>Promise ${result.index}</td><td>${result.time}</td>`;
